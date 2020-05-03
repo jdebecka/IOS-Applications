@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Joke Bank
+//  Image_Collector
 //
-//  Created by Julia Debecka on 04/04/2020.
+//  Created by Julia Debecka on 03/05/2020.
 //  Copyright © 2020 Julia Debecka. All rights reserved.
 //
 

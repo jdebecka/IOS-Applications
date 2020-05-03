@@ -3,27 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C04166942438B54A00E6555D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04166932438B54A00E6555D /* AppDelegate.swift */; };
 		C04166962438B54A00E6555D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04166952438B54A00E6555D /* SceneDelegate.swift */; };
-		C04166982438B54A00E6555D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04166972438B54A00E6555D /* ViewController.swift */; };
-		C041669B2438B54A00E6555D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C04166992438B54A00E6555D /* Main.storyboard */; };
 		C041669D2438B54C00E6555D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C041669C2438B54C00E6555D /* Assets.xcassets */; };
-		C04166A02438B54C00E6555D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C041669E2438B54C00E6555D /* LaunchScreen.storyboard */; };
+		C04166B12438B6BE00E6555D /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04166AF2438B6BE00E6555D /* MainTableViewCell.swift */; };
+		C04166B22438B6BE00E6555D /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C04166B02438B6BE00E6555D /* MainTableViewCell.xib */; };
+		C04166B52438B79800E6555D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C04166B42438B79800E6555D /* SnapKit */; };
+		C04166B82438B7EB00E6555D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04166B62438B7EB00E6555D /* TableViewController.swift */; };
+		C04166B92438B7EB00E6555D /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C04166B72438B7EB00E6555D /* TableViewController.xib */; };
+		C05EC8902438C86700D77ADA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05EC88F2438C86700D77ADA /* Launch Screen.storyboard */; };
+		C05EC8932438D59400D77ADA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C05EC8922438D59400D77ADA /* Alamofire */; };
+		C05EC8962438D5D100D77ADA /* WineRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EC8952438D5D100D77ADA /* WineRepository.swift */; };
+		C05EC8982438D71F00D77ADA /* Wine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EC8972438D71F00D77ADA /* Wine.swift */; };
+		C05EC89D2439119E00D77ADA /* DetailWine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EC89C2439119E00D77ADA /* DetailWine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C04166902438B54A00E6555D /* Joke Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Joke Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C04166902438B54A00E6555D /* First wine then food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "First wine then food.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C04166932438B54A00E6555D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C04166952438B54A00E6555D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C04166972438B54A00E6555D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C041669A2438B54A00E6555D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C041669C2438B54C00E6555D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C041669F2438B54C00E6555D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C04166A12438B54C00E6555D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C04166AF2438B6BE00E6555D /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		C04166B02438B6BE00E6555D /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		C04166B62438B7EB00E6555D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = "Joke Bank/Controllers/Main Table/TableViewController.swift"; sourceTree = SOURCE_ROOT; };
+		C04166B72438B7EB00E6555D /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TableViewController.xib; path = "Joke Bank/Controllers/Main Table/TableViewController.xib"; sourceTree = SOURCE_ROOT; };
+		C05EC88F2438C86700D77ADA /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C05EC8952438D5D100D77ADA /* WineRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineRepository.swift; sourceTree = "<group>"; };
+		C05EC8972438D71F00D77ADA /* Wine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wine.swift; sourceTree = "<group>"; };
+		C05EC89C2439119E00D77ADA /* DetailWine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C04166B52438B79800E6555D /* SnapKit in Frameworks */,
+				C05EC8932438D59400D77ADA /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +62,7 @@
 		C04166912438B54A00E6555D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C04166902438B54A00E6555D /* Joke Bank.app */,
+				C04166902438B54A00E6555D /* First wine then food.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +70,84 @@
 		C04166922438B54A00E6555D /* Joke Bank */ = {
 			isa = PBXGroup;
 			children = (
-				C04166932438B54A00E6555D /* AppDelegate.swift */,
+				C04166AC2438B5E300E6555D /* Resources */,
+				C04166AB2438B5BB00E6555D /* Model */,
+				C04166AA2438B5B700E6555D /* Views */,
+				C04166A72438B58700E6555D /* Controllers */,
 				C04166952438B54A00E6555D /* SceneDelegate.swift */,
-				C04166972438B54A00E6555D /* ViewController.swift */,
-				C04166992438B54A00E6555D /* Main.storyboard */,
-				C041669C2438B54C00E6555D /* Assets.xcassets */,
-				C041669E2438B54C00E6555D /* LaunchScreen.storyboard */,
+				C04166932438B54A00E6555D /* AppDelegate.swift */,
 				C04166A12438B54C00E6555D /* Info.plist */,
 			);
 			path = "Joke Bank";
+			sourceTree = "<group>";
+		};
+		C04166A72438B58700E6555D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C05EC8942438D5BA00D77ADA /* Networking */,
+				C04166BA2438B7FA00E6555D /* Main Table */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C04166AA2438B5B700E6555D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C05EC89B2439117200D77ADA /* DetailWine */,
+				C04166AE2438B68A00E6555D /* Main Table */,
+				C05EC88F2438C86700D77ADA /* Launch Screen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C04166AB2438B5BB00E6555D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C05EC8972438D71F00D77ADA /* Wine.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C04166AC2438B5E300E6555D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C041669C2438B54C00E6555D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C04166AE2438B68A00E6555D /* Main Table */ = {
+			isa = PBXGroup;
+			children = (
+				C04166AF2438B6BE00E6555D /* MainTableViewCell.swift */,
+				C04166B02438B6BE00E6555D /* MainTableViewCell.xib */,
+			);
+			path = "Main Table";
+			sourceTree = "<group>";
+		};
+		C04166BA2438B7FA00E6555D /* Main Table */ = {
+			isa = PBXGroup;
+			children = (
+				C04166B62438B7EB00E6555D /* TableViewController.swift */,
+				C04166B72438B7EB00E6555D /* TableViewController.xib */,
+			);
+			path = "Main Table";
+			sourceTree = "<group>";
+		};
+		C05EC8942438D5BA00D77ADA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C05EC8952438D5D100D77ADA /* WineRepository.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C05EC89B2439117200D77ADA /* DetailWine */ = {
+			isa = PBXGroup;
+			children = (
+				C05EC89C2439119E00D77ADA /* DetailWine.swift */,
+			);
+			path = DetailWine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,8 +166,12 @@
 			dependencies = (
 			);
 			name = "Joke Bank";
+			packageProductDependencies = (
+				C04166B42438B79800E6555D /* SnapKit */,
+				C05EC8922438D59400D77ADA /* Alamofire */,
+			);
 			productName = "Joke Bank";
-			productReference = C04166902438B54A00E6555D /* Joke Bank.app */;
+			productReference = C04166902438B54A00E6555D /* First wine then food.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,6 +198,10 @@
 				Base,
 			);
 			mainGroup = C04166872438B54A00E6555D;
+			packageReferences = (
+				C04166B32438B79800E6555D /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C05EC8912438D59400D77ADA /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = C04166912438B54A00E6555D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +216,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C04166A02438B54C00E6555D /* LaunchScreen.storyboard in Resources */,
 				C041669D2438B54C00E6555D /* Assets.xcassets in Resources */,
-				C041669B2438B54A00E6555D /* Main.storyboard in Resources */,
+				C04166B22438B6BE00E6555D /* MainTableViewCell.xib in Resources */,
+				C05EC8902438C86700D77ADA /* Launch Screen.storyboard in Resources */,
+				C04166B92438B7EB00E6555D /* TableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +230,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C04166982438B54A00E6555D /* ViewController.swift in Sources */,
 				C04166942438B54A00E6555D /* AppDelegate.swift in Sources */,
+				C05EC8962438D5D100D77ADA /* WineRepository.swift in Sources */,
+				C05EC8982438D71F00D77ADA /* Wine.swift in Sources */,
+				C04166B12438B6BE00E6555D /* MainTableViewCell.swift in Sources */,
+				C05EC89D2439119E00D77ADA /* DetailWine.swift in Sources */,
+				C04166B82438B7EB00E6555D /* TableViewController.swift in Sources */,
 				C04166962438B54A00E6555D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C04166992438B54A00E6555D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C041669A2438B54A00E6555D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C041669E2438B54C00E6555D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C041669F2438B54C00E6555D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C04166A22438B54C00E6555D /* Debug */ = {
@@ -292,7 +369,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Debecka-Jokes.Joke-Bank";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "First wine then food";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,7 +387,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Debecka-Jokes.Joke-Bank";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "First wine then food";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,6 +415,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C04166B32438B79800E6555D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		C05EC8912438D59400D77ADA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C04166B42438B79800E6555D /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C04166B32438B79800E6555D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		C05EC8922438D59400D77ADA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C05EC8912438D59400D77ADA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C04166882438B54A00E6555D /* Project object */;
 }
