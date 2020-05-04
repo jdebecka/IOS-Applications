@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hQl-FE-UDB">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,7 +10,7 @@
         <!--Collector-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Image_Collector" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CollectableViewController" customModule="Image_Collector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,12 +19,25 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="photoCell" id="Cl2-Og-FcE">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="photoCell" textLabel="wji-9a-6Vn" imageView="Pqa-BG-5gJ" style="IBUITableViewCellStyleDefault" id="Cl2-Og-FcE">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cl2-Og-FcE" id="4kE-Jl-QUc">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wji-9a-6Vn">
+                                                    <rect key="frame" x="79" y="0.0" width="315" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="photo" id="Pqa-BG-5gJ">
+                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -41,12 +54,15 @@
                     </view>
                     <navigationItem key="navigationItem" title="Collector" id="g1r-UK-nah">
                         <barButtonItem key="backBarButtonItem" title="Back" id="QEW-RM-CZg"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="A7g-zd-gKg">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="A7g-zd-gKg">
                             <connections>
                                 <segue destination="rmA-kN-k65" kind="show" id="VFI-wI-25R"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="aVC-hf-Wxy" id="5zY-2m-jmz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,48 +71,65 @@
         <!--Add Image-->
         <scene sceneID="QbH-lK-ec7">
             <objects>
-                <viewController id="rmA-kN-k65" sceneMemberID="viewController">
+                <viewController id="rmA-kN-k65" customClass="AddCollectableViewController" customModule="Image_Collector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="svj-6G-V8y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DYa-01-vQi">
-                                <rect key="frame" x="10" y="88" width="394" height="394"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DYa-01-vQi">
+                                <rect key="frame" x="10" y="97.5" width="394" height="395"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="DYa-01-vQi" secondAttribute="height" multiplier="1:1" id="RGG-J6-DcM"/>
                                 </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="11"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="94u-Xm-BIC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzB-GW-KAt">
+                                <rect key="frame" x="192" y="584" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addCollectable:" destination="rmA-kN-k65" eventType="touchUpInside" id="WDz-PI-agj"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JmG-Np-pde">
                                 <rect key="frame" x="10" y="520" width="394" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzB-GW-KAt">
-                                <rect key="frame" x="192" y="574" width="30" height="30"/>
-                                <state key="normal" title="Add"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="94u-Xm-BIC" firstAttribute="leading" secondItem="yXa-Ac-rZd" secondAttribute="leading" constant="10" id="3AP-y5-mb7"/>
-                            <constraint firstItem="DYa-01-vQi" firstAttribute="top" secondItem="yXa-Ac-rZd" secondAttribute="top" id="A7z-Wp-jku"/>
+                            <constraint firstItem="DYa-01-vQi" firstAttribute="top" secondItem="yXa-Ac-rZd" secondAttribute="top" constant="10" id="A7z-Wp-jku"/>
+                            <constraint firstItem="JmG-Np-pde" firstAttribute="leading" secondItem="DYa-01-vQi" secondAttribute="leading" id="HTV-VI-aHg"/>
                             <constraint firstItem="DYa-01-vQi" firstAttribute="leading" secondItem="yXa-Ac-rZd" secondAttribute="leading" constant="10" id="Htq-gH-jrE"/>
                             <constraint firstItem="gzB-GW-KAt" firstAttribute="centerX" secondItem="svj-6G-V8y" secondAttribute="centerX" id="KMr-Cl-ZZH"/>
                             <constraint firstItem="DYa-01-vQi" firstAttribute="centerX" secondItem="svj-6G-V8y" secondAttribute="centerX" id="Sk6-BB-RFW"/>
-                            <constraint firstItem="94u-Xm-BIC" firstAttribute="centerX" secondItem="svj-6G-V8y" secondAttribute="centerX" id="WE6-0t-YaH"/>
-                            <constraint firstItem="94u-Xm-BIC" firstAttribute="top" secondItem="DYa-01-vQi" secondAttribute="bottom" constant="38" id="hIx-q3-nlS"/>
-                            <constraint firstItem="yXa-Ac-rZd" firstAttribute="trailing" secondItem="94u-Xm-BIC" secondAttribute="trailing" constant="10" id="kzn-KK-Bbe"/>
-                            <constraint firstItem="gzB-GW-KAt" firstAttribute="top" secondItem="94u-Xm-BIC" secondAttribute="bottom" constant="20" id="qOF-Jq-zoW"/>
+                            <constraint firstItem="gzB-GW-KAt" firstAttribute="centerX" secondItem="svj-6G-V8y" secondAttribute="centerX" id="X4Z-2p-Qhi"/>
+                            <constraint firstItem="JmG-Np-pde" firstAttribute="top" secondItem="DYa-01-vQi" secondAttribute="bottom" constant="28" id="efq-qK-9jM"/>
+                            <constraint firstItem="JmG-Np-pde" firstAttribute="trailing" secondItem="DYa-01-vQi" secondAttribute="trailing" id="fbR-3T-6TZ"/>
+                            <constraint firstItem="gzB-GW-KAt" firstAttribute="top" secondItem="JmG-Np-pde" secondAttribute="bottom" constant="30" id="n21-8b-jCP"/>
                             <constraint firstItem="yXa-Ac-rZd" firstAttribute="trailing" secondItem="DYa-01-vQi" secondAttribute="trailing" constant="10" id="wsZ-eA-dwc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yXa-Ac-rZd"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Image" id="haG-0b-BU3">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="5mW-TB-xok"/>
-                            <barButtonItem systemItem="organize" id="tdO-Z7-dqf"/>
+                            <barButtonItem systemItem="camera" id="5mW-TB-xok">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="rmA-kN-k65" id="WO8-kn-WkZ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="organize" id="tdO-Z7-dqf">
+                                <connections>
+                                    <action selector="mediaFolderTapped:" destination="rmA-kN-k65" id="r8N-Wp-WxY"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="DYa-01-vQi" id="iVn-dq-Q6i"/>
+                        <outlet property="textField" destination="JmG-Np-pde" id="moq-87-sma"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kd1-10-V7B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -121,4 +154,8 @@
             <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="photo" width="512" height="512"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+    </resources>
 </document>
