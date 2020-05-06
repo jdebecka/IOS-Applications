@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C034DDC424617859001D0F04 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034DDC324617859001D0F04 /* Currency.swift */; };
+		C034DDC7246189D5001D0F04 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C034DDC6246189D5001D0F04 /* Alamofire */; };
+		C034DDC92461908C001D0F04 /* CurrencyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034DDC82461908C001D0F04 /* CurrencyAPI.swift */; };
+		C034DDCC24619A11001D0F04 /* Common-Currency.json in Resources */ = {isa = PBXBuildFile; fileRef = C034DDCB24619A11001D0F04 /* Common-Currency.json */; };
+		C034DDCF24619CD7001D0F04 /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034DDCE24619CD7001D0F04 /* CustomTableCell.swift */; };
+		C034DDD12461AB42001D0F04 /* AddCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034DDD02461AB42001D0F04 /* AddCurrencyViewController.swift */; };
 		C0629EBD246077A80089C7BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0629EBC246077A80089C7BD /* AppDelegate.swift */; };
 		C0629EBF246077A80089C7BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0629EBE246077A80089C7BD /* SceneDelegate.swift */; };
 		C0629EC1246077A80089C7BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0629EC0246077A80089C7BD /* ViewController.swift */; };
@@ -14,9 +20,16 @@
 		C0629EC7246077A80089C7BD /* Bitcoint_Price_Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0629EC5246077A80089C7BD /* Bitcoint_Price_Tracker.xcdatamodeld */; };
 		C0629EC9246077B00089C7BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0629EC8246077B00089C7BD /* Assets.xcassets */; };
 		C0629ECC246077B00089C7BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0629ECA246077B00089C7BD /* LaunchScreen.storyboard */; };
+		C0629ED4246166770089C7BD /* BitcoinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0629ED3246166770089C7BD /* BitcoinAPI.swift */; };
+		C0A13CB42461FE5200CA0270 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A13CB32461FE5200CA0270 /* DesignableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C034DDC324617859001D0F04 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		C034DDC82461908C001D0F04 /* CurrencyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyAPI.swift; sourceTree = "<group>"; };
+		C034DDCB24619A11001D0F04 /* Common-Currency.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Common-Currency.json"; sourceTree = "<group>"; };
+		C034DDCE24619CD7001D0F04 /* CustomTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
+		C034DDD02461AB42001D0F04 /* AddCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCurrencyViewController.swift; sourceTree = "<group>"; };
 		C0629EB9246077A80089C7BD /* Bitcoint Price Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bitcoint Price Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0629EBC246077A80089C7BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0629EBE246077A80089C7BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +39,8 @@
 		C0629EC8246077B00089C7BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0629ECB246077B00089C7BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0629ECD246077B00089C7BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0629ED3246166770089C7BD /* BitcoinAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinAPI.swift; sourceTree = "<group>"; };
+		C0A13CB32461FE5200CA0270 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +48,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C034DDC7246189D5001D0F04 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C034DDC224617843001D0F04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C034DDC324617859001D0F04 /* Currency.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C034DDC5246189D5001D0F04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C034DDCD24619CC6001D0F04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C034DDCE24619CD7001D0F04 /* CustomTableCell.swift */,
+				C0A13CB32461FE5200CA0270 /* DesignableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C0629EB0246077A80089C7BD = {
 			isa = PBXGroup;
 			children = (
 				C0629EBB246077A80089C7BD /* Bitcoint Price Tracker */,
 				C0629EBA246077A80089C7BD /* Products */,
+				C034DDC5246189D5001D0F04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +99,12 @@
 		C0629EBB246077A80089C7BD /* Bitcoint Price Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				C034DDCD24619CC6001D0F04 /* View */,
+				C034DDC224617843001D0F04 /* Model */,
+				C0629EDB246173220089C7BD /* Controller */,
+				C0629ED8246171FC0089C7BD /* Resources */,
 				C0629EBC246077A80089C7BD /* AppDelegate.swift */,
 				C0629EBE246077A80089C7BD /* SceneDelegate.swift */,
-				C0629EC0246077A80089C7BD /* ViewController.swift */,
 				C0629EC2246077A80089C7BD /* Main.storyboard */,
 				C0629EC8246077B00089C7BD /* Assets.xcassets */,
 				C0629ECA246077B00089C7BD /* LaunchScreen.storyboard */,
@@ -68,6 +112,33 @@
 				C0629EC5246077A80089C7BD /* Bitcoint_Price_Tracker.xcdatamodeld */,
 			);
 			path = "Bitcoint Price Tracker";
+			sourceTree = "<group>";
+		};
+		C0629ED8246171FC0089C7BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C034DDCB24619A11001D0F04 /* Common-Currency.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C0629EDB246173220089C7BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C0629EC0246077A80089C7BD /* ViewController.swift */,
+				C034DDD02461AB42001D0F04 /* AddCurrencyViewController.swift */,
+				C0629EDC246173260089C7BD /* Networking */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C0629EDC246173260089C7BD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C0629ED3246166770089C7BD /* BitcoinAPI.swift */,
+				C034DDC82461908C001D0F04 /* CurrencyAPI.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +157,9 @@
 			dependencies = (
 			);
 			name = "Bitcoint Price Tracker";
+			packageProductDependencies = (
+				C034DDC6246189D5001D0F04 /* Alamofire */,
+			);
 			productName = "Bitcoint Price Tracker";
 			productReference = C0629EB9246077A80089C7BD /* Bitcoint Price Tracker.app */;
 			productType = "com.apple.product-type.application";
@@ -96,6 +170,7 @@
 		C0629EB1246077A80089C7BD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Julia Debecka";
@@ -114,6 +189,9 @@
 				Base,
 			);
 			mainGroup = C0629EB0246077A80089C7BD;
+			packageReferences = (
+				C0629ED524616BDD0089C7BD /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = C0629EBA246077A80089C7BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0629ECC246077B00089C7BD /* LaunchScreen.storyboard in Resources */,
+				C034DDCC24619A11001D0F04 /* Common-Currency.json in Resources */,
 				C0629EC9246077B00089C7BD /* Assets.xcassets in Resources */,
 				C0629EC4246077A80089C7BD /* Main.storyboard in Resources */,
 			);
@@ -141,10 +220,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C034DDC424617859001D0F04 /* Currency.swift in Sources */,
 				C0629EC7246077A80089C7BD /* Bitcoint_Price_Tracker.xcdatamodeld in Sources */,
+				C0629ED4246166770089C7BD /* BitcoinAPI.swift in Sources */,
+				C034DDD12461AB42001D0F04 /* AddCurrencyViewController.swift in Sources */,
+				C034DDCF24619CD7001D0F04 /* CustomTableCell.swift in Sources */,
+				C0A13CB42461FE5200CA0270 /* DesignableView.swift in Sources */,
 				C0629EC1246077A80089C7BD /* ViewController.swift in Sources */,
 				C0629EBD246077A80089C7BD /* AppDelegate.swift in Sources */,
 				C0629EBF246077A80089C7BD /* SceneDelegate.swift in Sources */,
+				C034DDC92461908C001D0F04 /* CurrencyAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +427,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C0629ED524616BDD0089C7BD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C034DDC6246189D5001D0F04 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0629ED524616BDD0089C7BD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C0629EC5246077A80089C7BD /* Bitcoint_Price_Tracker.xcdatamodeld */ = {
