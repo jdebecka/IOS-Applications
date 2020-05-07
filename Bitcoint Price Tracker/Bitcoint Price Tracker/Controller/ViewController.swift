@@ -59,14 +59,16 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
         let code = Array(self.userCurrencyCodes)[indexPath.row]
     
         if let currentPrice = bitcoinCurrency[code] {
-            let formatter = NumberFormatter()
-            if let price = formatter.string(from: NSNumber(value: currentPrice)) {
-                 cell.currencyLabel.text = code + price
-            }
+            let price = currencyFormatter(price: currentPrice, currencyCode: code)
+            cell.currencyLabel.text = price
         }else {
             cell.currencyLabel.text = code
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
@@ -95,6 +97,19 @@ fileprivate extension ViewController {
         getBitcoinPrices()
     }
     
+    func currencyFormatter(price: Double, currencyCode: String) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.currencyCode = currencyCode
+        let priceString = formatter.string(from: NSNumber(value: price))
+        
+        if priceString == nil {
+            return "ERROR"
+        }else {
+            return priceString!
+        }
+    }
+    
     func getBitcoinPrices() {
         BitcoinRepository.getCurrentBitcoin(for: Array(userCurrencyCodes)) { (bitcoinCurrent, error) in
             guard let bitcoinCurrent = bitcoinCurrent else { return }
@@ -104,9 +119,7 @@ fileprivate extension ViewController {
                 self.bitcoinCurrency = bitcoinCurrent
                 if let doubleUSD = self.bitcoinCurrency["USD"] {
                     if let symbol = self.allCurrencies["USD"]?.symbol {
-                        let formatter = NumberFormatter()
-                        let price = formatter.string(from: NSNumber(value: doubleUSD))!
-                        self.usdLabel.text = symbol + price
+                        self.usdLabel.text = self.currencyFormatter(price: doubleUSD, currencyCode: symbol)
                     }else {
                         self.usdLabel.text = "\(doubleUSD)"
                     }

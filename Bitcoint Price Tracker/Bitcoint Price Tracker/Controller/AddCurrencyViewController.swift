@@ -18,6 +18,7 @@ class AddCurrencyViewController: UIViewController {
     var attributedLabels: [NSAttributedString] = []
     var addedCurrencies = Set<String>()
     
+    
     override func loadView() {
         super.loadView()
         CurrencyRepository.getAllCurrencies( { (currency) in
