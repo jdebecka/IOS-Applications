@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LDB-dG-F8X">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Configure Your Egg-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Egg_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How large is your egg?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEe-4f-rLq">
+                                <rect key="frame" x="105" y="158" width="204.5" height="27"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="O9u-Ag-v9v">
+                                <rect key="frame" x="10" y="235" width="394" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhN-RB-FpO">
+                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="bFu-GV-Mmd"/>
+                                        </constraints>
+                                        <state key="normal" title="Large">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="largeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="31Z-rV-UaJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRS-YJ-duF">
+                                        <rect key="frame" x="134.5" y="0.0" width="125" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Ttn-Ob-8f8"/>
+                                        </constraints>
+                                        <state key="normal" title="Medium">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mediumTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uQV-io-5d2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urD-ob-13J">
+                                        <rect key="frame" x="269.5" y="0.0" width="124.5" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="slh-Qw-Ljs"/>
+                                        </constraints>
+                                        <state key="normal" title="Small">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="smallTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RWI-DL-jKp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you like your eggs?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjJ-Ym-QH9">
+                                <rect key="frame" x="84.5" y="375.5" width="245.5" height="27"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RVE-jK-6cj">
+                                <rect key="frame" x="10" y="452.5" width="394" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pON-CM-jiq">
+                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="7gf-Qs-mvo"/>
+                                        </constraints>
+                                        <state key="normal" title="Soft">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="softTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZhI-iW-FkS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvX-US-h0n">
+                                        <rect key="frame" x="134.5" y="0.0" width="125" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="iJz-KT-CuB"/>
+                                        </constraints>
+                                        <state key="normal" title="Medium">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mediumCookTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8xi-pm-2Pi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmN-K7-zUM">
+                                        <rect key="frame" x="269.5" y="0.0" width="124.5" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="7y1-Pn-gtO"/>
+                                        </constraints>
+                                        <state key="normal" title="Hard">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kWn-St-a4k"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzC-RV-0lm">
+                                <rect key="frame" x="20" y="702" width="374" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="kFV-Ei-9p7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
+                                <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Let's get started">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startCookingTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bhG-bT-swd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RVE-jK-6cj" firstAttribute="top" secondItem="HjJ-Ym-QH9" secondAttribute="bottom" constant="50" id="2uT-IC-yz6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O9u-Ag-v9v" secondAttribute="trailing" constant="10" id="5LA-bk-nNj"/>
+                            <constraint firstItem="HjJ-Ym-QH9" firstAttribute="top" secondItem="zEe-4f-rLq" secondAttribute="bottom" constant="190.5" id="AyX-Mh-fpe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gzC-RV-0lm" secondAttribute="bottom" constant="100" id="PfM-13-MtW"/>
+                            <constraint firstItem="gzC-RV-0lm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SOG-vD-zUq"/>
+                            <constraint firstItem="HjJ-Ym-QH9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SeA-4m-YIc"/>
+                            <constraint firstItem="O9u-Ag-v9v" firstAttribute="top" secondItem="zEe-4f-rLq" secondAttribute="bottom" constant="50" id="Tpa-i1-yZK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RVE-jK-6cj" secondAttribute="trailing" constant="10" id="bqR-6u-Zve"/>
+                            <constraint firstItem="gzC-RV-0lm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="c4f-Ag-36R"/>
+                            <constraint firstItem="RVE-jK-6cj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="oNn-X7-Ntz"/>
+                            <constraint firstItem="O9u-Ag-v9v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="rtZ-ok-CLV"/>
+                            <constraint firstItem="zEe-4f-rLq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wsY-ux-ebP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gzC-RV-0lm" secondAttribute="trailing" constant="20" id="yFm-hH-gNa"/>
+                            <constraint firstItem="zEe-4f-rLq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="ycs-8D-mJd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Configure Your Egg" id="oQa-1z-hpV"/>
+                    <connections>
+                        <outlet property="cookEggsButon" destination="gzC-RV-0lm" id="esN-OC-hV4"/>
+                        <outlet property="hard" destination="qmN-K7-zUM" id="4LM-uB-qcs"/>
+                        <outlet property="largeButton" destination="QhN-RB-FpO" id="bg5-iK-taa"/>
+                        <outlet property="medium" destination="VvX-US-h0n" id="iBL-Tb-kb3"/>
+                        <outlet property="mediumButton" destination="kRS-YJ-duF" id="WF4-cM-sll"/>
+                        <outlet property="smallButton" destination="urD-ob-13J" id="7i0-j9-4hl"/>
+                        <outlet property="soft" destination="pON-CM-jiq" id="Hhh-6u-umS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1155" y="133"/>
+        </scene>
+        <!--Cook Eggs View Controller-->
+        <scene sceneID="LgQ-hS-dLV">
+            <objects>
+                <viewController storyboardIdentifier="CookEggViewContoller" id="2QT-Ah-Iby" customClass="CookEggsViewController" customModule="Egg_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fth-l1-PN7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFT-vF-3Ma">
+                                <rect key="frame" x="160" y="64" width="94.5" height="38"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="XZE-hS-BXy">
+                                <rect key="frame" x="10" y="622" width="394" height="170"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f88-UC-EIi">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="v37-Jz-aZC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="20"/>
+                                        <state key="normal" title="Water is boiling">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="softTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NPh-FR-hFT"/>
+                                            <action selector="waterIsBoilingTapped:" destination="2QT-Ah-Iby" eventType="touchUpInside" id="HVg-S5-Doq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7g-wD-TMt">
+                                        <rect key="frame" x="0.0" y="65" width="394" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="u0S-7w-EkN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="20"/>
+                                        <state key="normal" title="Eggs are gently Placed in the Pot">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="EggsInPodTapped:" destination="2QT-Ah-Iby" eventType="touchUpInside" id="qMO-7v-5uT"/>
+                                            <action selector="mediumCookTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Dp-v7-gj4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iC0-jd-Xfv">
+                                        <rect key="frame" x="0.0" y="130" width="394" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="pgt-jP-UW2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="20"/>
+                                        <state key="normal" title="Start Timer">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lWc-9B-Ykb"/>
+                                            <action selector="startTimerTapped:" destination="2QT-Ah-Iby" eventType="touchUpInside" id="K4D-Jj-rDb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iC0-jd-Xfv" secondAttribute="trailing" id="IHH-Lr-rwi"/>
+                                    <constraint firstAttribute="trailing" secondItem="f88-UC-EIi" secondAttribute="trailing" id="OdR-4G-jIC"/>
+                                    <constraint firstAttribute="trailing" secondItem="E7g-wD-TMt" secondAttribute="trailing" id="PZR-pw-Akr"/>
+                                    <constraint firstItem="E7g-wD-TMt" firstAttribute="leading" secondItem="XZE-hS-BXy" secondAttribute="leading" id="TCv-qb-CYz"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click the button once you complete given action" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROR-hd-to6">
+                                <rect key="frame" x="5" y="491" width="404" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="DaO-fL-EGp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adjust Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9T-sx-Oze">
+                                <rect key="frame" x="124" y="117" width="166.5" height="42"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jj9-H2-7t0">
+                                <rect key="frame" x="30" y="254" width="354" height="40"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="20"/>
+                                <state key="normal" title="Save as a prefered time">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="softTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s1l-bz-48u"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="gOd-gn-sWu">
+                                <rect key="frame" x="144.5" y="174" width="125" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGQ-0H-3DN">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="iVV-g2-HkX"/>
+                                            <constraint firstAttribute="height" constant="50" id="wpb-uf-mL9"/>
+                                        </constraints>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" image="minus.circle" catalog="system">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="minusTapped:" destination="2QT-Ah-Iby" eventType="touchUpInside" id="aqr-bx-aJ9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsO-vW-lVO">
+                                        <rect key="frame" x="75" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="KP9-a0-zZA"/>
+                                            <constraint firstAttribute="height" constant="50" id="npL-Gd-peL"/>
+                                        </constraints>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <connections>
+                                            <action selector="plusTapped:" destination="2QT-Ah-Iby" eventType="touchUpInside" id="Vqe-6y-mID"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="45w-lL-dJp" firstAttribute="trailing" secondItem="XZE-hS-BXy" secondAttribute="trailing" constant="10" id="2Ql-YS-zgq"/>
+                            <constraint firstItem="BFT-vF-3Ma" firstAttribute="centerX" secondItem="Fth-l1-PN7" secondAttribute="centerX" id="2il-Ra-Oeu"/>
+                            <constraint firstItem="Jj9-H2-7t0" firstAttribute="top" secondItem="gOd-gn-sWu" secondAttribute="bottom" constant="30" id="A18-ef-nFM"/>
+                            <constraint firstItem="45w-lL-dJp" firstAttribute="bottom" secondItem="XZE-hS-BXy" secondAttribute="bottom" constant="70" id="ClO-gK-h4d"/>
+                            <constraint firstItem="z9T-sx-Oze" firstAttribute="centerX" secondItem="Fth-l1-PN7" secondAttribute="centerX" id="LxX-h0-C9g"/>
+                            <constraint firstItem="ROR-hd-to6" firstAttribute="leading" secondItem="45w-lL-dJp" secondAttribute="leading" constant="5" id="PDb-Wk-766"/>
+                            <constraint firstItem="Jj9-H2-7t0" firstAttribute="leading" secondItem="45w-lL-dJp" secondAttribute="leading" constant="30" id="STR-15-DkE"/>
+                            <constraint firstItem="XZE-hS-BXy" firstAttribute="top" secondItem="ROR-hd-to6" secondAttribute="bottom" constant="30" id="Swy-IN-Cdx"/>
+                            <constraint firstItem="BFT-vF-3Ma" firstAttribute="top" secondItem="45w-lL-dJp" secondAttribute="top" constant="20" id="TE0-B9-0FV"/>
+                            <constraint firstItem="z9T-sx-Oze" firstAttribute="top" secondItem="BFT-vF-3Ma" secondAttribute="bottom" constant="15" id="UaP-cP-KNF"/>
+                            <constraint firstItem="XZE-hS-BXy" firstAttribute="leading" secondItem="45w-lL-dJp" secondAttribute="leading" constant="10" id="X47-i0-DEB"/>
+                            <constraint firstItem="ROR-hd-to6" firstAttribute="centerX" secondItem="Fth-l1-PN7" secondAttribute="centerX" id="cg0-MK-eds"/>
+                            <constraint firstItem="gOd-gn-sWu" firstAttribute="centerX" secondItem="Fth-l1-PN7" secondAttribute="centerX" id="mZ8-xn-m1c"/>
+                            <constraint firstItem="gOd-gn-sWu" firstAttribute="top" secondItem="z9T-sx-Oze" secondAttribute="bottom" constant="15" id="vj9-HK-gLI"/>
+                            <constraint firstItem="45w-lL-dJp" firstAttribute="trailing" secondItem="Jj9-H2-7t0" secondAttribute="trailing" constant="30" id="xMP-CM-VUh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="45w-lL-dJp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QnA-Do-pmp"/>
+                    <connections>
+                        <outlet property="boilingButton" destination="f88-UC-EIi" id="u4X-j7-S8r"/>
+                        <outlet property="minusButton" destination="yGQ-0H-3DN" id="qpM-oq-z4m"/>
+                        <outlet property="plusButton" destination="FsO-vW-lVO" id="Lsu-AT-TLj"/>
+                        <outlet property="potButton" destination="E7g-wD-TMt" id="lry-of-BW5"/>
+                        <outlet property="saveUserDefaults" destination="Jj9-H2-7t0" id="jyW-gh-WxB"/>
+                        <outlet property="startButton" destination="iC0-jd-Xfv" id="Ksv-WR-ml0"/>
+                        <outlet property="timeLabel" destination="BFT-vF-3Ma" id="ghP-vX-RFb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k7B-Hp-FKO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1969.5652173913045" y="132.58928571428572"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wet-iO-Drf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LDB-dG-F8X" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" alpha="0.45000000000000001" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Mp-9m-5ia">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Q4e-lT-P4x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5E-D6-t52" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="minus.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

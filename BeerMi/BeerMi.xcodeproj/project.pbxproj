@@ -3,141 +3,133 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C0B787DB2464AAFB00B8FF9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B787DA2464AAFB00B8FF9A /* AppDelegate.swift */; };
-		C0B787DD2464AAFB00B8FF9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B787DC2464AAFB00B8FF9A /* SceneDelegate.swift */; };
-		C0B787DF2464AAFB00B8FF9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B787DE2464AAFB00B8FF9A /* ViewController.swift */; };
-		C0B787E22464AAFB00B8FF9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0B787E02464AAFB00B8FF9A /* Main.storyboard */; };
-		C0B787E42464AAFE00B8FF9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0B787E32464AAFE00B8FF9A /* Assets.xcassets */; };
-		C0B787E72464AAFE00B8FF9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0B787E52464AAFE00B8FF9A /* LaunchScreen.storyboard */; };
-		C0CE2E8524670880002B03CF /* CookEggsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE2E8424670880002B03CF /* CookEggsViewController.swift */; };
-		C0CE2E8924671515002B03CF /* UIViewsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE2E8824671515002B03CF /* UIViewsExtensions.swift */; };
-		C0FDD3BC2464AF230038727E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C0FDD3BB2464AF230038727E /* SnapKit */; };
+		C09B3AB62465E56800356F20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09B3AB52465E56800356F20 /* AppDelegate.swift */; };
+		C09B3AB82465E56800356F20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09B3AB72465E56800356F20 /* SceneDelegate.swift */; };
+		C09B3ABA2465E56800356F20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09B3AB92465E56800356F20 /* ViewController.swift */; };
+		C09B3ABD2465E56800356F20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C09B3ABB2465E56800356F20 /* Main.storyboard */; };
+		C09B3ABF2465E57100356F20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C09B3ABE2465E57100356F20 /* Assets.xcassets */; };
+		C09B3AC22465E57100356F20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C09B3AC02465E57100356F20 /* LaunchScreen.storyboard */; };
+		C0CE2E832465F905002B03CF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE2E822465F905002B03CF /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C0B787D72464AAFB00B8FF9A /* Egg Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Egg Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0B787DA2464AAFB00B8FF9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C0B787DC2464AAFB00B8FF9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C0B787DE2464AAFB00B8FF9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C0B787E12464AAFB00B8FF9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C0B787E32464AAFE00B8FF9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C0B787E62464AAFE00B8FF9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C0B787E82464AAFE00B8FF9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0CE2E8424670880002B03CF /* CookEggsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookEggsViewController.swift; sourceTree = "<group>"; };
-		C0CE2E8824671515002B03CF /* UIViewsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewsExtensions.swift; sourceTree = "<group>"; };
+		C09B3AB22465E56800356F20 /* BeerMi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerMi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C09B3AB52465E56800356F20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C09B3AB72465E56800356F20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C09B3AB92465E56800356F20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C09B3ABC2465E56800356F20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C09B3ABE2465E57100356F20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C09B3AC12465E57100356F20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C09B3AC32465E57100356F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0CE2E822465F905002B03CF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C0B787D42464AAFB00B8FF9A /* Frameworks */ = {
+		C09B3AAF2465E56800356F20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0FDD3BC2464AF230038727E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C0B787CE2464AAFB00B8FF9A = {
+		C09B3AA92465E56800356F20 = {
 			isa = PBXGroup;
 			children = (
-				C0B787D92464AAFB00B8FF9A /* Egg Timer */,
-				C0B787D82464AAFB00B8FF9A /* Products */,
+				C09B3AB42465E56800356F20 /* BeerMi */,
+				C09B3AB32465E56800356F20 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C0B787D82464AAFB00B8FF9A /* Products */ = {
+		C09B3AB32465E56800356F20 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C0B787D72464AAFB00B8FF9A /* Egg Timer.app */,
+				C09B3AB22465E56800356F20 /* BeerMi.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C0B787D92464AAFB00B8FF9A /* Egg Timer */ = {
+		C09B3AB42465E56800356F20 /* BeerMi */ = {
 			isa = PBXGroup;
 			children = (
-				C0B787F02464AB1500B8FF9A /* Controller */,
-				C0B787EF2464AB0E00B8FF9A /* Model */,
-				C0B787EE2464AB0900B8FF9A /* View */,
-				C0B787DA2464AAFB00B8FF9A /* AppDelegate.swift */,
-				C0B787DC2464AAFB00B8FF9A /* SceneDelegate.swift */,
-				C0B787E32464AAFE00B8FF9A /* Assets.xcassets */,
-				C0B787E82464AAFE00B8FF9A /* Info.plist */,
+				C09B3ACA2465E61C00356F20 /* Model */,
+				C09B3ACB2465E62700356F20 /* View */,
+				C09B3AC92465E59400356F20 /* Controller */,
+				C09B3AB52465E56800356F20 /* AppDelegate.swift */,
+				C09B3AB72465E56800356F20 /* SceneDelegate.swift */,
+				C09B3ABE2465E57100356F20 /* Assets.xcassets */,
+				C09B3AC32465E57100356F20 /* Info.plist */,
 			);
-			path = "Egg Timer";
+			path = BeerMi;
 			sourceTree = "<group>";
 		};
-		C0B787EE2464AB0900B8FF9A /* View */ = {
+		C09B3AC92465E59400356F20 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C0B787E02464AAFB00B8FF9A /* Main.storyboard */,
-				C0B787E52464AAFE00B8FF9A /* LaunchScreen.storyboard */,
-				C0CE2E8824671515002B03CF /* UIViewsExtensions.swift */,
+				C09B3AB92465E56800356F20 /* ViewController.swift */,
+				C0CE2E822465F905002B03CF /* DetailViewController.swift */,
 			);
-			path = View;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		C0B787EF2464AB0E00B8FF9A /* Model */ = {
+		C09B3ACA2465E61C00356F20 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		C0B787F02464AB1500B8FF9A /* Controller */ = {
+		C09B3ACB2465E62700356F20 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C0B787DE2464AAFB00B8FF9A /* ViewController.swift */,
-				C0CE2E8424670880002B03CF /* CookEggsViewController.swift */,
+				C09B3AC02465E57100356F20 /* LaunchScreen.storyboard */,
+				C09B3ABB2465E56800356F20 /* Main.storyboard */,
 			);
-			path = Controller;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C0B787D62464AAFB00B8FF9A /* Egg Timer */ = {
+		C09B3AB12465E56800356F20 /* BeerMi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C0B787EB2464AAFE00B8FF9A /* Build configuration list for PBXNativeTarget "Egg Timer" */;
+			buildConfigurationList = C09B3AC62465E57100356F20 /* Build configuration list for PBXNativeTarget "BeerMi" */;
 			buildPhases = (
-				C0B787D32464AAFB00B8FF9A /* Sources */,
-				C0B787D42464AAFB00B8FF9A /* Frameworks */,
-				C0B787D52464AAFB00B8FF9A /* Resources */,
+				C09B3AAE2465E56800356F20 /* Sources */,
+				C09B3AAF2465E56800356F20 /* Frameworks */,
+				C09B3AB02465E56800356F20 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Egg Timer";
-			packageProductDependencies = (
-				C0FDD3BB2464AF230038727E /* SnapKit */,
-			);
-			productName = "Egg Timer";
-			productReference = C0B787D72464AAFB00B8FF9A /* Egg Timer.app */;
+			name = BeerMi;
+			productName = BeerMi;
+			productReference = C09B3AB22465E56800356F20 /* BeerMi.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C0B787CF2464AAFB00B8FF9A /* Project object */ = {
+		C09B3AAA2465E56800356F20 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Julia Debecka";
 				TargetAttributes = {
-					C0B787D62464AAFB00B8FF9A = {
+					C09B3AB12465E56800356F20 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
 			};
-			buildConfigurationList = C0B787D22464AAFB00B8FF9A /* Build configuration list for PBXProject "Egg Timer" */;
+			buildConfigurationList = C09B3AAD2465E56800356F20 /* Build configuration list for PBXProject "BeerMi" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -145,60 +137,56 @@
 				en,
 				Base,
 			);
-			mainGroup = C0B787CE2464AAFB00B8FF9A;
-			packageReferences = (
-				C0FDD3BA2464AF230038727E /* XCRemoteSwiftPackageReference "SnapKit" */,
-			);
-			productRefGroup = C0B787D82464AAFB00B8FF9A /* Products */;
+			mainGroup = C09B3AA92465E56800356F20;
+			productRefGroup = C09B3AB32465E56800356F20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C0B787D62464AAFB00B8FF9A /* Egg Timer */,
+				C09B3AB12465E56800356F20 /* BeerMi */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C0B787D52464AAFB00B8FF9A /* Resources */ = {
+		C09B3AB02465E56800356F20 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0B787E72464AAFE00B8FF9A /* LaunchScreen.storyboard in Resources */,
-				C0B787E42464AAFE00B8FF9A /* Assets.xcassets in Resources */,
-				C0B787E22464AAFB00B8FF9A /* Main.storyboard in Resources */,
+				C09B3AC22465E57100356F20 /* LaunchScreen.storyboard in Resources */,
+				C09B3ABF2465E57100356F20 /* Assets.xcassets in Resources */,
+				C09B3ABD2465E56800356F20 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C0B787D32464AAFB00B8FF9A /* Sources */ = {
+		C09B3AAE2465E56800356F20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0CE2E8524670880002B03CF /* CookEggsViewController.swift in Sources */,
-				C0B787DF2464AAFB00B8FF9A /* ViewController.swift in Sources */,
-				C0CE2E8924671515002B03CF /* UIViewsExtensions.swift in Sources */,
-				C0B787DB2464AAFB00B8FF9A /* AppDelegate.swift in Sources */,
-				C0B787DD2464AAFB00B8FF9A /* SceneDelegate.swift in Sources */,
+				C09B3ABA2465E56800356F20 /* ViewController.swift in Sources */,
+				C09B3AB62465E56800356F20 /* AppDelegate.swift in Sources */,
+				C09B3AB82465E56800356F20 /* SceneDelegate.swift in Sources */,
+				C0CE2E832465F905002B03CF /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C0B787E02464AAFB00B8FF9A /* Main.storyboard */ = {
+		C09B3ABB2465E56800356F20 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C0B787E12464AAFB00B8FF9A /* Base */,
+				C09B3ABC2465E56800356F20 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		C0B787E52464AAFE00B8FF9A /* LaunchScreen.storyboard */ = {
+		C09B3AC02465E57100356F20 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C0B787E62464AAFE00B8FF9A /* Base */,
+				C09B3AC12465E57100356F20 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -206,7 +194,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C0B787E92464AAFE00B8FF9A /* Debug */ = {
+		C09B3AC42465E57100356F20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,7 +254,7 @@
 			};
 			name = Debug;
 		};
-		C0B787EA2464AAFE00B8FF9A /* Release */ = {
+		C09B3AC52465E57100356F20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -320,36 +308,36 @@
 			};
 			name = Release;
 		};
-		C0B787EC2464AAFE00B8FF9A /* Debug */ = {
+		C09B3AC72465E57100356F20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X834F4822U;
-				INFOPLIST_FILE = "Egg Timer/Info.plist";
+				INFOPLIST_FILE = BeerMi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Debecka.Egg-Timer";
+				PRODUCT_BUNDLE_IDENTIFIER = Debecka.BeerMi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		C0B787ED2464AAFE00B8FF9A /* Release */ = {
+		C09B3AC82465E57100356F20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X834F4822U;
-				INFOPLIST_FILE = "Egg Timer/Info.plist";
+				INFOPLIST_FILE = BeerMi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Debecka.Egg-Timer";
+				PRODUCT_BUNDLE_IDENTIFIER = Debecka.BeerMi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,44 +347,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C0B787D22464AAFB00B8FF9A /* Build configuration list for PBXProject "Egg Timer" */ = {
+		C09B3AAD2465E56800356F20 /* Build configuration list for PBXProject "BeerMi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C0B787E92464AAFE00B8FF9A /* Debug */,
-				C0B787EA2464AAFE00B8FF9A /* Release */,
+				C09B3AC42465E57100356F20 /* Debug */,
+				C09B3AC52465E57100356F20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C0B787EB2464AAFE00B8FF9A /* Build configuration list for PBXNativeTarget "Egg Timer" */ = {
+		C09B3AC62465E57100356F20 /* Build configuration list for PBXNativeTarget "BeerMi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C0B787EC2464AAFE00B8FF9A /* Debug */,
-				C0B787ED2464AAFE00B8FF9A /* Release */,
+				C09B3AC72465E57100356F20 /* Debug */,
+				C09B3AC82465E57100356F20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		C0FDD3BA2464AF230038727E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C0FDD3BB2464AF230038727E /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C0FDD3BA2464AF230038727E /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = C0B787CF2464AAFB00B8FF9A /* Project object */;
+	rootObject = C09B3AAA2465E56800356F20 /* Project object */;
 }
