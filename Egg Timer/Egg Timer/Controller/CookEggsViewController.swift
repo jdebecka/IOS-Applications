@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CookEggsViewController: UIViewController {
 
@@ -17,15 +18,20 @@ class CookEggsViewController: UIViewController {
     @IBOutlet weak var potButton: UIButton!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var timeLabel: UILabel!
+    var gradientLayer: CAGradientLayer!
+    var key: String!
     
     var eggKind: String = ""
     var eggSize: String = ""
     var cookTime: Double!
+    var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        key = eggSize + eggKind
         cookTime = timeForEggs()
-        timeLabel.text = "Recommended Time: " + String(cookTime / 60)
+        getUserPreference()
+        updateTimeLabel()
         saveUserDefaults.roundCorners()
         minusButton.roundCorners()
         plusButton.roundCorners()
@@ -35,9 +41,28 @@ class CookEggsViewController: UIViewController {
         setup()
     }
     
+    @IBAction func saveAsPreffered(_ sender: Any) {
+        guard let time = timeLabel.text else { return }
+        let messageEgg = "\(time) as your prefered time for egg of size: \(eggSize) and cooked: \(eggKind)"
+        let alert = UIAlertController(title: "Do you want to save?", message: messageEgg, preferredStyle: .alert)
+        let yesAction = UIAlertAction(title: "Yes", style: .destructive) { (action) in
+            self.saveUserPreserence()
+        }
+        let noAction = UIAlertAction(title: "No", style: .default, handler: nil)
+        
+        alert.addAction(yesAction)
+        alert.addAction(noAction)
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+
     @IBAction func minusTapped(_ sender: Any) {
+        cookTime -= 1
+        updateTimeLabel()
     }
     @IBAction func plusTapped(_ sender: Any) {
+        cookTime += 1
+        updateTimeLabel()
     }
     @IBAction func waterIsBoilingTapped(_ sender: Any) {
         boilingButton.isEnabled = false
@@ -55,6 +80,7 @@ class CookEggsViewController: UIViewController {
     @IBAction func startTimerTapped(_ sender: Any) {
         startButton.isEnabled = true
         startButton.backgroundColor = .systemGray6
+        timerForEggs()
     }
     
     /*
@@ -69,16 +95,47 @@ class CookEggsViewController: UIViewController {
 
 }
 
+
+
 fileprivate extension CookEggsViewController {
+    func eggsReadyAlarm() {
+        guard let url = Bundle.main.url(forResource: "Radar", withExtension: "mp3") else { return }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            let player = try AVAudioPlayer(contentsOf: url)
+            player.play()
+            
+        }catch {
+            print(error)
+        }
+    }
+    func saveUserPreserence() {
+        UserDefaults.standard.set(cookTime, forKey: key)
+    }
+
+    func getUserPreference() {
+        if let userPreferences = UserDefaults.standard.object(forKey: key) as? Double {
+            cookTime = userPreferences
+            updateTimeLabel()
+        }
+    }
     
+    func updateTimeLabel() {
+        let formatter = DateComponentsFormatter()
+        formatter.allowedUnits = [.minute, .second]
+        formatter.unitsStyle = .positional
+        let formattedString = formatter.string(from: TimeInterval(cookTime))!
+        
+        timeLabel.text = "Recommended Time: \(formattedString)"
+    }
     func setup() {
         let colors = [UIColor.white.cgColor, CGColor(srgbRed: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1),  CGColor(srgbRed: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1), CGColor(srgbRed: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)]
         
-        let gradientLayer = self.view.getGradientLayer(with: colors, for: [1.0, 1.0, 0.0, 0.0])
+        gradientLayer = self.view.getGradientLayer(with: colors, for: [1.0, 1.0, 0.0, 0.0])
         
-        let animation = makeAnimation()
-        
-        gradientLayer.add(animation, forKey: nil)
         self.view.layer.insertSublayer(gradientLayer, at: 0)
         
     }
@@ -91,7 +148,7 @@ fileprivate extension CookEggsViewController {
             case .soft:
                 return 3 * 60
             case .medium:
-                return 4.30 * 60
+                return 4.50 * 60
             case .hard:
                 return 12 * 60
             }
@@ -106,7 +163,7 @@ fileprivate extension CookEggsViewController {
             case .small:
                 return 0
             case .medium:
-                return 1.30 * 60
+                return 1.5 * 60
             case .large:
                 return 2 * 60
             }
@@ -136,11 +193,28 @@ fileprivate extension CookEggsViewController {
         return time
     }
     
+    @objc func secondPassed() {
+        if cookTime > 0 {
+            cookTime = cookTime - 1
+            updateTimeLabel()
+        }else {
+            timer.invalidate()
+        }
+        
+        
+    }
+    
     func makeAnimation() -> CABasicAnimation {
         let animation = CABasicAnimation(keyPath: "locations")
         animation.fromValue = [ 1.0, 1.0, 1.0, 1.0]
         animation.toValue = [0.0, 0.4, 0.6, 1.0]
-        animation.duration = 20
+        animation.duration = cookTime
         return animation
+    }
+    func timerForEggs() {
+        
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(CookEggsViewController.secondPassed), userInfo: nil, repeats: true)
+        let animation = makeAnimation()
+        gradientLayer.add(animation, forKey: nil)
     }
 }

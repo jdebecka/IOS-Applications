@@ -9,9 +9,6 @@
 import UIKit
 import SnapKit
 class ViewController: UIViewController {
-    //    @objc func processTimer() {
-    //        print("hello")
-    //    }
     
     var eggSize: String!
     var preference: String!
@@ -127,3 +124,4 @@ fileprivate extension ViewController {
         return animation
     }
 }
+

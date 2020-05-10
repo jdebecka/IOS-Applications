@@ -172,9 +172,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFT-vF-3Ma">
-                                <rect key="frame" x="160" y="64" width="94.5" height="38"/>
-                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="BFT-vF-3Ma">
+                                <rect key="frame" x="20" y="64" width="374" height="31"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -192,7 +192,6 @@
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="softTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NPh-FR-hFT"/>
                                             <action selector="waterIsBoilingTapped:" destination="2QT-Ah-Iby" eventType="touchUpInside" id="HVg-S5-Doq"/>
                                         </connections>
                                     </button>
@@ -208,7 +207,6 @@
                                         </state>
                                         <connections>
                                             <action selector="EggsInPodTapped:" destination="2QT-Ah-Iby" eventType="touchUpInside" id="qMO-7v-5uT"/>
-                                            <action selector="mediumCookTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Dp-v7-gj4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iC0-jd-Xfv">
@@ -222,7 +220,6 @@
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="hardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lWc-9B-Ykb"/>
                                             <action selector="startTimerTapped:" destination="2QT-Ah-Iby" eventType="touchUpInside" id="K4D-Jj-rDb"/>
                                         </connections>
                                     </button>
@@ -244,24 +241,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adjust Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9T-sx-Oze">
-                                <rect key="frame" x="124" y="117" width="166.5" height="42"/>
-                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
+                                <rect key="frame" x="140.5" y="110" width="133.5" height="34"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jj9-H2-7t0">
-                                <rect key="frame" x="30" y="254" width="354" height="40"/>
+                                <rect key="frame" x="30" y="239" width="354" height="40"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="20"/>
                                 <state key="normal" title="Save as a prefered time">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="softTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s1l-bz-48u"/>
+                                    <action selector="saveAsPreffered:" destination="2QT-Ah-Iby" eventType="touchUpInside" id="2qT-UB-cP0"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="gOd-gn-sWu">
-                                <rect key="frame" x="144.5" y="174" width="125" height="50"/>
+                                <rect key="frame" x="144.5" y="159" width="125" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGQ-0H-3DN">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -301,6 +298,7 @@
                             <constraint firstItem="45w-lL-dJp" firstAttribute="bottom" secondItem="XZE-hS-BXy" secondAttribute="bottom" constant="70" id="ClO-gK-h4d"/>
                             <constraint firstItem="z9T-sx-Oze" firstAttribute="centerX" secondItem="Fth-l1-PN7" secondAttribute="centerX" id="LxX-h0-C9g"/>
                             <constraint firstItem="ROR-hd-to6" firstAttribute="leading" secondItem="45w-lL-dJp" secondAttribute="leading" constant="5" id="PDb-Wk-766"/>
+                            <constraint firstItem="BFT-vF-3Ma" firstAttribute="leading" secondItem="45w-lL-dJp" secondAttribute="leading" constant="20" id="RTF-qx-MKB"/>
                             <constraint firstItem="Jj9-H2-7t0" firstAttribute="leading" secondItem="45w-lL-dJp" secondAttribute="leading" constant="30" id="STR-15-DkE"/>
                             <constraint firstItem="XZE-hS-BXy" firstAttribute="top" secondItem="ROR-hd-to6" secondAttribute="bottom" constant="30" id="Swy-IN-Cdx"/>
                             <constraint firstItem="BFT-vF-3Ma" firstAttribute="top" secondItem="45w-lL-dJp" secondAttribute="top" constant="20" id="TE0-B9-0FV"/>
@@ -308,6 +306,7 @@
                             <constraint firstItem="XZE-hS-BXy" firstAttribute="leading" secondItem="45w-lL-dJp" secondAttribute="leading" constant="10" id="X47-i0-DEB"/>
                             <constraint firstItem="ROR-hd-to6" firstAttribute="centerX" secondItem="Fth-l1-PN7" secondAttribute="centerX" id="cg0-MK-eds"/>
                             <constraint firstItem="gOd-gn-sWu" firstAttribute="centerX" secondItem="Fth-l1-PN7" secondAttribute="centerX" id="mZ8-xn-m1c"/>
+                            <constraint firstItem="45w-lL-dJp" firstAttribute="trailing" secondItem="BFT-vF-3Ma" secondAttribute="trailing" constant="20" id="op2-A3-5W4"/>
                             <constraint firstItem="gOd-gn-sWu" firstAttribute="top" secondItem="z9T-sx-Oze" secondAttribute="bottom" constant="15" id="vj9-HK-gLI"/>
                             <constraint firstItem="45w-lL-dJp" firstAttribute="trailing" secondItem="Jj9-H2-7t0" secondAttribute="trailing" constant="30" id="xMP-CM-VUh"/>
                         </constraints>

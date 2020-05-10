@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C014279424688E8E0014D1D0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C014279324688E8D0014D1D0 /* AVFoundation.framework */; };
 		C0B787DB2464AAFB00B8FF9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B787DA2464AAFB00B8FF9A /* AppDelegate.swift */; };
 		C0B787DD2464AAFB00B8FF9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B787DC2464AAFB00B8FF9A /* SceneDelegate.swift */; };
 		C0B787DF2464AAFB00B8FF9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B787DE2464AAFB00B8FF9A /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C014279324688E8D0014D1D0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C0B787D72464AAFB00B8FF9A /* Egg Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Egg Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B787DA2464AAFB00B8FF9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0B787DC2464AAFB00B8FF9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C014279424688E8E0014D1D0 /* AVFoundation.framework in Frameworks */,
 				C0FDD3BC2464AF230038727E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,11 +46,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C014279224688E8D0014D1D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C014279324688E8D0014D1D0 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C0B787CE2464AAFB00B8FF9A = {
 			isa = PBXGroup;
 			children = (
 				C0B787D92464AAFB00B8FF9A /* Egg Timer */,
 				C0B787D82464AAFB00B8FF9A /* Products */,
+				C014279224688E8D0014D1D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
