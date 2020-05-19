@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xcf-2c-zML">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Roboty-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RobotsMainViewController" customModule="Roboty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCW-rb-3sJ" customClass="CustomView" customModule="Roboty" customModuleProvider="target">
+                                <rect key="frame" x="20" y="116" width="335" height="83.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Swd-2a-hNJ">
+                                        <rect key="frame" x="20" y="20" width="295" height="43.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informacje o filmie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nHL-N0-FeY">
+                                                <rect key="frame" x="0.0" y="0.0" width="193" height="43.5"/>
+                                                <fontDescription key="fontDescription" name="KhmerSangamMN" family="Khmer Sangam MN" pointSize="24"/>
+                                                <color key="textColor" red="0.1764705882" green="0.30588235289999999" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIP-QF-EZW">
+                                                <rect key="frame" x="270" y="10" width="25" height="24"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </button>
+                                        </subviews>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="21"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.88235294117647056" green="0.89803921568627454" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Swd-2a-hNJ" firstAttribute="centerY" secondItem="TCW-rb-3sJ" secondAttribute="centerY" id="DEb-JT-UBI"/>
+                                    <constraint firstItem="Swd-2a-hNJ" firstAttribute="leading" secondItem="TCW-rb-3sJ" secondAttribute="leading" constant="20" id="ILV-K8-Xe5"/>
+                                    <constraint firstItem="Swd-2a-hNJ" firstAttribute="top" secondItem="TCW-rb-3sJ" secondAttribute="top" constant="20" id="jBV-SY-zXS"/>
+                                    <constraint firstAttribute="trailing" secondItem="Swd-2a-hNJ" secondAttribute="trailing" constant="20" id="ygA-mc-zHG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Oz1-A7-6k2">
+                                <rect key="frame" x="20" y="219.5" width="335" height="447.5"/>
+                                <color key="backgroundColor" red="0.1764705882352941" green="0.30588235294117649" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VL3-rp-MPQ">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1764705882352941" green="0.30588235294117649" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Oz1-A7-6k2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0NF-Qc-Kst"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TCW-rb-3sJ" secondAttribute="trailing" constant="20" id="DJH-Vi-RHx"/>
+                            <constraint firstItem="Oz1-A7-6k2" firstAttribute="top" secondItem="TCW-rb-3sJ" secondAttribute="bottom" constant="20" id="PwN-Po-qE6"/>
+                            <constraint firstItem="TCW-rb-3sJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dEp-mv-f2K"/>
+                            <constraint firstItem="TCW-rb-3sJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="iBG-gh-D8v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Oz1-A7-6k2" secondAttribute="bottom" id="oBf-gx-ndg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Oz1-A7-6k2" secondAttribute="trailing" constant="20" id="y37-mt-V7d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Roboty" id="mZp-it-gy2">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="yRZ-SW-VEa"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="Oz1-A7-6k2" id="UVZ-p2-Baf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077.5999999999999" y="109.29535232383809"/>
+        </scene>
+        <!--Radek Dekiel-->
+        <scene sceneID="HUS-eY-gy2">
+            <objects>
+                <viewController storyboardIdentifier="CharacterDetail" id="6Qo-7Q-FFq" customClass="CharacterDetailViewController" customModule="Roboty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cr0-oy-f7n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0F3-7a-Q3h" customClass="customButton" customModule="Roboty" customModuleProvider="target">
+                                <rect key="frame" x="237" y="349" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.8980392157" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4iI-t9-Tsv"/>
+                                    <constraint firstAttribute="width" constant="100" id="c4P-CE-aDV"/>
+                                </constraints>
+                                <state key="normal" title="O postaci">
+                                    <color key="titleColor" red="0.1764705882" green="0.30588235289999999" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kx-3f-gwq" customClass="customButton" customModule="Roboty" customModuleProvider="target">
+                                <rect key="frame" x="50" y="410" width="120" height="120"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.8980392157" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="x00-Sh-fmI"/>
+                                    <constraint firstAttribute="width" constant="120" id="xwg-8a-71n"/>
+                                </constraints>
+                                <state key="normal" title="Zdjecia">
+                                    <color key="titleColor" red="0.1764705882" green="0.30588235289999999" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbN-3W-YM5" customClass="CustomView" customModule="Roboty" customModuleProvider="target">
+                                <rect key="frame" x="295" y="200" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.8980392157" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="59l-Wg-mOZ"/>
+                                    <constraint firstAttribute="width" constant="60" id="RdZ-Jo-7IH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CYJ-M3-37O" customClass="CustomView" customModule="Roboty" customModuleProvider="target">
+                                <rect key="frame" x="127.5" y="10" width="120" height="120"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RodneyCopperbottom" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Pg-1D-2lN">
+                                        <rect key="frame" x="-110" y="10" width="340" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="5Fa-aP-7sb"/>
+                                        </constraints>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.8980392157" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5Pg-1D-2lN" firstAttribute="centerY" secondItem="CYJ-M3-37O" secondAttribute="centerY" id="FyY-zY-f1f"/>
+                                    <constraint firstAttribute="width" constant="120" id="St3-5X-0D1"/>
+                                    <constraint firstItem="5Pg-1D-2lN" firstAttribute="centerX" secondItem="CYJ-M3-37O" secondAttribute="centerX" id="daM-av-eai"/>
+                                    <constraint firstAttribute="height" constant="120" id="eQL-QB-FS6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzZ-RX-bJc" customClass="customButton" customModule="Roboty" customModuleProvider="target">
+                                <rect key="frame" x="50" y="191" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.8980392157" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="sGR-Vu-YGy"/>
+                                </constraints>
+                                <state key="normal" title="Scenariusz">
+                                    <color key="titleColor" red="0.1764705882" green="0.30588235289999999" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1764705882" green="0.30588235289999999" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="CYJ-M3-37O" firstAttribute="centerX" secondItem="cr0-oy-f7n" secondAttribute="centerX" id="37Y-Be-E1N"/>
+                            <constraint firstItem="2Kx-3f-gwq" firstAttribute="leading" secondItem="arf-B0-oKZ" secondAttribute="leading" constant="50" id="D8g-Ex-RYa"/>
+                            <constraint firstItem="0F3-7a-Q3h" firstAttribute="leading" secondItem="2Kx-3f-gwq" secondAttribute="trailing" constant="67" id="DqP-qS-BxU"/>
+                            <constraint firstItem="mbN-3W-YM5" firstAttribute="top" secondItem="wzZ-RX-bJc" secondAttribute="bottom" constant="-141" id="EF9-e9-CVX"/>
+                            <constraint firstItem="0F3-7a-Q3h" firstAttribute="top" secondItem="wzZ-RX-bJc" secondAttribute="bottom" constant="8" id="FAs-Ga-U5Z"/>
+                            <constraint firstItem="mbN-3W-YM5" firstAttribute="leading" secondItem="wzZ-RX-bJc" secondAttribute="trailing" constant="95" id="Moh-FC-zbb"/>
+                            <constraint firstAttribute="trailing" secondItem="mbN-3W-YM5" secondAttribute="trailing" constant="20" id="N6X-FY-ySb"/>
+                            <constraint firstItem="mbN-3W-YM5" firstAttribute="top" secondItem="arf-B0-oKZ" secondAttribute="top" constant="200" id="Ubr-Bw-vNT"/>
+                            <constraint firstItem="wzZ-RX-bJc" firstAttribute="leading" secondItem="arf-B0-oKZ" secondAttribute="leading" constant="50" id="XwV-B7-kUf"/>
+                            <constraint firstItem="CYJ-M3-37O" firstAttribute="top" secondItem="arf-B0-oKZ" secondAttribute="top" constant="10" id="fRh-Rx-HRI"/>
+                            <constraint firstItem="2Kx-3f-gwq" firstAttribute="top" secondItem="wzZ-RX-bJc" secondAttribute="bottom" constant="69" id="uLE-Ay-vGc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="arf-B0-oKZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Radek Dekiel" id="mkB-Eb-Ekr"/>
+                    <connections>
+                        <outlet property="imageView" destination="5Pg-1D-2lN" id="Kmy-yu-FAO"/>
+                        <outlet property="photoButton" destination="2Kx-3f-gwq" id="Z4A-i5-NW8"/>
+                        <outlet property="scriptButton" destination="wzZ-RX-bJc" id="ie0-Bo-RWL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bva-Ds-e1J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1878" y="109"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cfY-h9-8ej">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xcf-2c-zML" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="top" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="N4U-Kv-Q1M" customClass="NavigationBar" customModule="Roboty" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.88235294119999996" green="0.8980392157" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.1764705882352941" green="0.30588235294117649" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="37"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oyh-Mc-fLL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8b7-DB-pr6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="109.29535232383809"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RodneyCopperbottom" width="340" height="676"/>
+    </resources>
+</document>

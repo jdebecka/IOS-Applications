@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C011DF49246963DF00DA5DC6 /* RobotsMainViewControllerCollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011DF48246963DF00DA5DC6 /* RobotsMainViewControllerCollectionExtension.swift */; };
+		C011DF4C2469692B00DA5DC6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C011DF4B2469692B00DA5DC6 /* SnapKit */; };
+		C011DF5124697E7000DA5DC6 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011DF5024697E7000DA5DC6 /* CustomView.swift */; };
+		C011DF562469B14E00DA5DC6 /* RobotMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011DF552469B14E00DA5DC6 /* RobotMovieModel.swift */; };
+		C011DF582469B23100DA5DC6 /* Robots.json in Resources */ = {isa = PBXBuildFile; fileRef = C011DF572469B23100DA5DC6 /* Robots.json */; };
+		C011DF5B2469B26E00DA5DC6 /* ReadJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C011DF5A2469B26E00DA5DC6 /* ReadJson.swift */; };
+		C07B56F7246951C4002643A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B56F6246951C4002643A3 /* AppDelegate.swift */; };
+		C07B56F9246951C4002643A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B56F8246951C4002643A3 /* SceneDelegate.swift */; };
+		C07B56FB246951C4002643A3 /* RobotsMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B56FA246951C4002643A3 /* RobotsMainViewController.swift */; };
+		C07B56FE246951C4002643A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07B56FC246951C4002643A3 /* Main.storyboard */; };
+		C07B5701246951C4002643A3 /* Roboty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C07B56FF246951C4002643A3 /* Roboty.xcdatamodeld */; };
+		C07B5703246951CA002643A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C07B5702246951CA002643A3 /* Assets.xcassets */; };
+		C07B5706246951CA002643A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07B5704246951CA002643A3 /* LaunchScreen.storyboard */; };
+		C07B57132469554C002643A3 /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B57122469554C002643A3 /* CharacterCollectionViewCell.swift */; };
+		C0AA50972469BBCE009F6B06 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AA50962469BBCE009F6B06 /* CharacterDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C011DF48246963DF00DA5DC6 /* RobotsMainViewControllerCollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotsMainViewControllerCollectionExtension.swift; sourceTree = "<group>"; };
+		C011DF5024697E7000DA5DC6 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		C011DF552469B14E00DA5DC6 /* RobotMovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotMovieModel.swift; sourceTree = "<group>"; };
+		C011DF572469B23100DA5DC6 /* Robots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Robots.json; path = ../../../../../../Desktop/Robots.json; sourceTree = "<group>"; };
+		C011DF5A2469B26E00DA5DC6 /* ReadJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadJson.swift; sourceTree = "<group>"; };
+		C07B56F3246951C4002643A3 /* Roboty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roboty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C07B56F6246951C4002643A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C07B56F8246951C4002643A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C07B56FA246951C4002643A3 /* RobotsMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotsMainViewController.swift; sourceTree = "<group>"; };
+		C07B56FD246951C4002643A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C07B5700246951C4002643A3 /* Roboty.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Roboty.xcdatamodel; sourceTree = "<group>"; };
+		C07B5702246951CA002643A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C07B5705246951CA002643A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C07B5707246951CA002643A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C07B57122469554C002643A3 /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		C0AA50962469BBCE009F6B06 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C07B56F0246951C4002643A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C011DF4C2469692B00DA5DC6 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C011DF462469565000DA5DC6 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C07B56FA246951C4002643A3 /* RobotsMainViewController.swift */,
+				C011DF48246963DF00DA5DC6 /* RobotsMainViewControllerCollectionExtension.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		C011DF4D246979AF00DA5DC6 /* UIKitExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				C011DF5024697E7000DA5DC6 /* CustomView.swift */,
+			);
+			path = UIKitExtensions;
+			sourceTree = "<group>";
+		};
+		C011DF542469B13300DA5DC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C011DF552469B14E00DA5DC6 /* RobotMovieModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C011DF592469B25E00DA5DC6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C011DF5A2469B26E00DA5DC6 /* ReadJson.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C07B56EA246951C4002643A3 = {
+			isa = PBXGroup;
+			children = (
+				C07B56F5246951C4002643A3 /* Roboty */,
+				C07B56F4246951C4002643A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C07B56F4246951C4002643A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C07B56F3246951C4002643A3 /* Roboty.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C07B56F5246951C4002643A3 /* Roboty */ = {
+			isa = PBXGroup;
+			children = (
+				C07B5704246951CA002643A3 /* LaunchScreen.storyboard */,
+				C07B56FC246951C4002643A3 /* Main.storyboard */,
+				C011DF542469B13300DA5DC6 /* Model */,
+				C07B570F24695512002643A3 /* ViewController */,
+				C07B570E2469550E002643A3 /* View */,
+				C07B570D24695204002643A3 /* Resources */,
+				C07B56F6246951C4002643A3 /* AppDelegate.swift */,
+				C07B56F8246951C4002643A3 /* SceneDelegate.swift */,
+				C07B5707246951CA002643A3 /* Info.plist */,
+				C07B56FF246951C4002643A3 /* Roboty.xcdatamodeld */,
+			);
+			path = Roboty;
+			sourceTree = "<group>";
+		};
+		C07B570D24695204002643A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C011DF572469B23100DA5DC6 /* Robots.json */,
+				C07B5702246951CA002643A3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C07B570E2469550E002643A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C011DF4D246979AF00DA5DC6 /* UIKitExtensions */,
+				C07B571024695525002643A3 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C07B570F24695512002643A3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C0AA50952469BBAC009F6B06 /* CharacterDetail */,
+				C011DF592469B25E00DA5DC6 /* Networking */,
+				C011DF462469565000DA5DC6 /* MainScreen */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C07B571024695525002643A3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C07B57122469554C002643A3 /* CharacterCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C0AA50952469BBAC009F6B06 /* CharacterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C0AA50962469BBCE009F6B06 /* CharacterDetailViewController.swift */,
+			);
+			path = CharacterDetail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C07B56F2246951C4002643A3 /* Roboty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C07B570A246951CA002643A3 /* Build configuration list for PBXNativeTarget "Roboty" */;
+			buildPhases = (
+				C07B56EF246951C4002643A3 /* Sources */,
+				C07B56F0246951C4002643A3 /* Frameworks */,
+				C07B56F1246951C4002643A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Roboty;
+			packageProductDependencies = (
+				C011DF4B2469692B00DA5DC6 /* SnapKit */,
+			);
+			productName = Roboty;
+			productReference = C07B56F3246951C4002643A3 /* Roboty.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C07B56EB246951C4002643A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Julia Debecka";
+				TargetAttributes = {
+					C07B56F2246951C4002643A3 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = C07B56EE246951C4002643A3 /* Build configuration list for PBXProject "Roboty" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C07B56EA246951C4002643A3;
+			packageReferences = (
+				C011DF4A2469692B00DA5DC6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = C07B56F4246951C4002643A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C07B56F2246951C4002643A3 /* Roboty */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C07B56F1246951C4002643A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C011DF582469B23100DA5DC6 /* Robots.json in Resources */,
+				C07B5706246951CA002643A3 /* LaunchScreen.storyboard in Resources */,
+				C07B5703246951CA002643A3 /* Assets.xcassets in Resources */,
+				C07B56FE246951C4002643A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C07B56EF246951C4002643A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C011DF5B2469B26E00DA5DC6 /* ReadJson.swift in Sources */,
+				C07B57132469554C002643A3 /* CharacterCollectionViewCell.swift in Sources */,
+				C07B56FB246951C4002643A3 /* RobotsMainViewController.swift in Sources */,
+				C07B56F7246951C4002643A3 /* AppDelegate.swift in Sources */,
+				C07B5701246951C4002643A3 /* Roboty.xcdatamodeld in Sources */,
+				C0AA50972469BBCE009F6B06 /* CharacterDetailViewController.swift in Sources */,
+				C011DF5124697E7000DA5DC6 /* CustomView.swift in Sources */,
+				C011DF49246963DF00DA5DC6 /* RobotsMainViewControllerCollectionExtension.swift in Sources */,
+				C07B56F9246951C4002643A3 /* SceneDelegate.swift in Sources */,
+				C011DF562469B14E00DA5DC6 /* RobotMovieModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C07B56FC246951C4002643A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C07B56FD246951C4002643A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C07B5704246951CA002643A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C07B5705246951CA002643A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C07B5708246951CA002643A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C07B5709246951CA002643A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C07B570B246951CA002643A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X834F4822U;
+				INFOPLIST_FILE = Roboty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Debecka.Roboty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C07B570C246951CA002643A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X834F4822U;
+				INFOPLIST_FILE = Roboty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Debecka.Roboty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C07B56EE246951C4002643A3 /* Build configuration list for PBXProject "Roboty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07B5708246951CA002643A3 /* Debug */,
+				C07B5709246951CA002643A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C07B570A246951CA002643A3 /* Build configuration list for PBXNativeTarget "Roboty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07B570B246951CA002643A3 /* Debug */,
+				C07B570C246951CA002643A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C011DF4A2469692B00DA5DC6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C011DF4B2469692B00DA5DC6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C011DF4A2469692B00DA5DC6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		C07B56FF246951C4002643A3 /* Roboty.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C07B5700246951C4002643A3 /* Roboty.xcdatamodel */,
+			);
+			currentVersion = C07B5700246951C4002643A3 /* Roboty.xcdatamodel */;
+			path = Roboty.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C07B56EB246951C4002643A3 /* Project object */;
+}
