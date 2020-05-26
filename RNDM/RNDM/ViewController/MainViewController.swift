@@ -46,13 +46,20 @@ class MainViewController: UIViewController {
         default:
             selectedCategory = ThoughtCategory.popular.rawValue
         }
+        
+        if selectedCategory == ThoughtCategory.popular.rawValue {
+            thoughtsListener.remove()
+            setPopularListener()
+        }else {
+            thoughtsListener.remove()
+            setListener()
+        }
+
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    func setPopularListener(){
         
-        // Remember to remove them once we stop using them
-        thoughtsListener = thoughtsCollectionReference.addSnapshotListener { (snapshot, error) in
+        thoughtsListener = thoughtsCollectionReference.order(by: NUM_LIKES, descending: true).addSnapshotListener { (snapshot, error) in
             if let error = error {
                 debugPrint("Error fetching docs: \(error)")
             }else {
@@ -62,6 +69,39 @@ class MainViewController: UIViewController {
             }
             self.tableView.reloadData()
         }
+    }
+    
+    func setListener(){
+        
+        thoughtsListener = thoughtsCollectionReference.whereField(CATEGORY, isEqualTo: selectedCategory).order(by: TIMESTAMP, descending: true).addSnapshotListener { (snapshot, error) in
+            if let error = error {
+                debugPrint("Error fetching docs: \(error)")
+            }else {
+                guard let snap = snapshot else { return }
+                self.thoughsList.removeAll()
+                self.getAndDecodeData(snap: snap)
+            }
+            self.tableView.reloadData()
+        }
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setListener()
+        
+        // Remember to remove them once we stop using them
+//        thoughtsListener = thoughtsCollectionReference.addSnapshotListener { (snapshot, error) in
+//            if let error = error {
+//                debugPrint("Error fetching docs: \(error)")
+//            }else {
+//                guard let snap = snapshot else { return }
+//                self.thoughsList.removeAll()
+//                self.getAndDecodeData(snap: snap)
+//            }
+//            self.tableView.reloadData()
+//        }
 //        thoughtsCollectionReference.getDocuments { (snapshot, error) in
 //            if let error = error {
 //                debugPrint("Error fetching docs: \(error)")
